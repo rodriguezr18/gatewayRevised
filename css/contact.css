@@ -1,0 +1,145 @@
+/*Embedding the font from googlefonts into CSS */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+
+
+/*Universal selector to add to all tags in html that are within the body  */
+/* resetting CSS */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* specifying my font for my body */
+body {
+  /*    */
+  font-family: "Lato", sans-serif;
+}
+
+/* sets my nav bar to the right side of the screen */
+/* padding adds space to top and bottom */
+/* i'm using flex to create a container that I can use to style  */
+/* j-c aligns my items when the items do not use all available space on the main axis (row) */
+/* parent container */
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* list-style removes bullet points */
+/* attacks container around my nav bar / puts nacvbar horizontally */
+/* container inside nav.container */
+.link-container {
+  list-style: none;
+  display: flex;
+}
+
+/* 3 seperate containers attacking each line seperately */
+/* margin right gives space to the right of each container */
+.link-container li {
+  margin-right: 20px;
+}
+
+/* attacking / styling the hyperlink */
+.link-container li a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+/* grand child */
+/* select element line when I mouse over */
+/* underline the line element when you mouse over */
+.active-hover:hover {
+  border-bottom: 3px solid black;
+}
+
+/* attacking the contact page to leave it underlined when user is on it */
+.current {
+  border-bottom: 3px solid black;
+}
+
+/* put "contact" in the middle */
+.main-logo {
+  text-align: center;
+}
+
+/* container around my form */
+/* when in column justify-content switches axis */
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  height: 500px;
+  margin: 0 auto;
+}
+
+/* container around each input */
+/* margin-bottom space between inputs from bottoms */
+input {
+  height: 50px;
+ margin-bottom: 10px;
+  font-size: 20px;
+  border: 3px solid black;
+}
+
+/* comment box */
+textarea {
+  border: 3px solid black;
+  resize: none;
+  height: 100px;
+}
+
+/* container around my footer */
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* attacking my icon in p tag / 0 margin top & bottom / 100px left & right */
+.footer-container p {
+  margin: 0 100px;
+}
+
+/* making my yin yang symbol larger */
+.yin-style {
+  font-size: 25px;
+}
+
+/* attacking all my i elements and making them white */
+i {
+  color: white;
+}
+
+/* attacking each icon / turns salmon color when you mouse over */
+.icon:hover {
+  color: salmon;
+  transition: 1s;
+}
+
+/* adding space on the right side of my copyright */
+.copy-right {
+  margin-right: 20px;
+}
+
+.validator {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 111px;
+/*   border: 4px solid red; */
+  
+}
+

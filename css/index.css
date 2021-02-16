@@ -1,0 +1,146 @@
+/*Embedding the font from googlefonts into CSS */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+
+
+/*Universal selector to add to all tags in html that are within the body  */
+/* resetting CSS */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* specifying my font for my body */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* sets my nav bar to the right side of the screen */
+/* padding adds space to top and bottom */
+/* i'm using flex to create a container that I can use to style  */
+/* j-c aligns my items when the items do not use all available space on the main axis (row) */
+/* parent */
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  
+}
+
+/* list-style removes bullet points */
+/* attacks container around my nav bar / puts nacvbar horizontally */
+/* child  */
+.link-container {
+  list-style: none;
+  display: flex;
+}
+
+/* 3 seperate containers attacking each line seperately / media logos as well */
+/* margin right gives space to the right of each container */
+.link-container li {
+  margin-right: 20px;
+}
+
+/* attacking / styling the hyperlink.m */
+.link-container li a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+/* grand child */
+/* select element line when I mouse over */
+/* underline the line element when you mouse over */
+.active-hover:hover {
+  border-bottom: 3px solid black;
+}
+
+/* attacking the home page to leave it underlined when user is on it */
+.current {
+  border-bottom: 3px solid black;
+}
+
+/* sets my h1 in the center of the page */
+/* sets my image as the cover background */
+/* background-size / size of the background image / cover: resize image to cover enitre container */
+/* background-a sets whether a background image scrolls with the page/ fixed makes it not move with the page   */
+/* parent container */
+/* VH covers the entire view that the user can see */
+.main-logo-container {
+  display: flex;
+  justify-content: center;
+/*  default alignment inside flexbox  */
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://imgcp.aacdn.jp/img-a/1720/auto/global-aaj-front/article/2017/01/5867f31dc3a54_5867f0f9ed307_261952290.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* child container */
+/* attacking h1 directly */
+/* container around SHIKOKU */
+.main-logo {
+  font-size: 120px;
+  color: white;
+  text-shadow: 10px 10px 15px black;   
+}
+
+/* container around my content description */
+/* padding two values / top & bottom then left & right */
+.content-container {
+  font-size: 25px;
+  line-height: 70px;
+  padding: 20px 40px;
+  text-align: center;
+  height: 50vh;
+}
+
+.validator {
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* container around my footer */
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/* attacking my icon in p tag / 0 margin top & bottom / 100px left & right */
+.footer-container p {
+  margin: 0 100px;
+}
+
+/* making my yin yang symbol larger */
+.yin-style {
+  font-size: 25px;
+}
+
+/* attacking all my i elements and making them white */
+i {
+  color: white;
+}
+
+/* attacking each icon / turns salmon color when you mouse over */
+.icon:hover {
+  color: salmon;
+  transition: 1s;
+}
+
+/* adding space on the right side of my copyright */
+.copy-right {
+  margin-right: 20px;
+}
+
+

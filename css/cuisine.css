@@ -1,0 +1,176 @@
+/*Embedding the font from googlefonts into CSS */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+
+
+
+/* resetting CSS */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* specifying my font for my body */
+body {
+  font-family: "Lato", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/* sets my nav bar to the right side of the screen */
+/* padding adds space to top and bottom */
+/* i'm using flex to create a container that I can use to style  */
+/* j-c aligns my items when the items do not use all available space on the main axis (row) */
+/* parent container */
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* list-style removes bullet points */
+/* attacks container around my nav bar / puts nacvbar horizontally */
+/* container inside nav.container */
+.link-container {
+  list-style: none;
+  display: flex;
+}
+
+/* 3 seperate containers attacking each line seperately */
+/* margin right gives space to the right of each container */
+.link-container li {
+  margin-right: 20px;
+}
+
+/* attacking / styling the hyperlink */
+.link-container li a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+/* grand child */
+/* select element line when I mouse over */
+/* underline the line element when you mouse over */
+.active-hover:hover {
+  border-bottom: 3px solid black;
+}
+
+/* attacking the todo to leave it underlined when user is on it */
+.current {
+  border-bottom: 3px solid black;
+}
+
+/* container containing image and heading */
+/* parent */
+.main-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  background-image: url("https://c1.wallpaperflare.com/preview/278/80/45/food-photos-noodles-public-domain.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+ /* child */
+/* container around h1 foods */
+/* h-shadow v-shadow blur-radius */
+.main-logo {
+  font-size: 80px;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+
+/* parent */
+/* specifies that items in container wrap */
+.todo {
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 3px solid red; */
+}
+
+/* child */
+/* all four margins 40px */
+/* container around 6 foods */
+.foods {
+  /* display: flex;
+  flex-direction: row; */
+  margin: 20px auto;
+  width: 500px;
+  height: 500px;
+  line-height: 2;
+  text-align: center;
+ 
+}
+
+/* attacking my image foods */
+.foods img {
+  height: 300px;
+  border-radius: 7px;
+  width: 400px;
+  margin-top: 20px;
+  
+  /*  fills 100% of the child which is 30vw of the whole page  */
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+.validator {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 111px;
+}
+
+/* container around my footer */
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  /* attacking my icon in p tag / 0 margin top & bottom / 100px left & right */
+  .footer-container p {
+    margin: 0 100px;
+  }
+  
+  /* making my yin yang symbol larger */
+  .yin-style {
+    font-size: 25px;
+  }
+  
+  /* attacking all my i elements and making them white */
+  i {
+    color: white;
+  }
+  
+  /* attacking each icon / turns salmon color when you mouse over */
+  .icon:hover {
+    color: salmon;
+    transition: 1s;
+  }
+  
+  /* adding space on the right side of my copyright */
+  .copy-right {
+    margin-right: 20px;
+  }
+  
+  
+  

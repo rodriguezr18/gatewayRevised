@@ -1,0 +1,214 @@
+<!-- instruction to the web browser about what version of HTML the page is written in -->
+<!DOCTYPE html>
+
+<!-- Root of an html document/container for HTML elements except <!DOCTYPE> tag -->
+<html lang="en">
+
+<!-- Container for metadata (data about data) between <html> tag and <body> tag  BEHIND THE SCENES -->
+
+<head>
+
+  <!-- Defines the title of the document / shown in browsers title bar or page's tab     -->
+  <!--  Important for Search Engine Optimization / Make it meaningful    -->
+  <title>To do</title>
+
+  <!-- <link> defines relationship between current document and external resource     -->
+  <!-- <link rel= specifies the relationship between current DOC and linked DOC     -->
+  <!--  href= specifies the location of the linked document   -->
+  <!--  type= lets the browser know what type of file it is    -->
+
+  <link rel="stylesheet" href="./css/todo.css" type="text/css">
+
+
+
+</head>
+
+<!-- defines documents body/contains headings,paragraphs,images,hyperlinks,tables,list   -->
+
+<body>
+
+  <!-- nav defines a set of navigation links/ intended only for major block of nav links  -->
+  <!-- class specifies one or more class names for an element/ can be used more than once -->
+  <!-- class is pointing to my css style sheet     -->
+  <nav class="nav-container">
+
+    <!-- <ul> defines unordered (bulleted) list      -->
+    <!--  used list-style: none; to take bullets away      -->
+    <!--  class="link container" pointing to my style sheet     -->
+    <ul class="link-container">
+
+      <!--  class="active-hover" pointing to my style sheet to directly hit each line      -->
+      <!--  <a> defines hyperlink used to link from one page to another        -->
+      <!--  href is the path to my file      -->
+      <li class="active-hover"><a href="./index.html">Home</a></li>
+      <li class="active-hover current"><a href="./todo.html">To Do</a></li>
+      <li class="active-hover"><a href="./cuisine.html">Cuisine</a></li>
+      <li class="active-hover"><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- header defines the header of a page or a section   -->
+  <!--   h1 defines the most important heading -->
+  <header class="main-logo-container">
+    <h1 class="main-logo">Activities</h1>
+  </header>
+
+  <!-- defines the section in my document   -->
+  <!--  div used as a container for my HTML elements, which I then styled with CSS / any sort of content   -->
+  <!--  <img> is used to embed an image / src= specifies the path to the image / alt= specifies alternate text -->
+  <section class="todo">
+
+   
+    <div class="activities">
+      <img
+        src="https://shikoku-tourism.com/image/rendering/issue_paragraph_image/43/trim.1024/3/2?v=633869a5129fac79f4499ed6455dd4a5e9515379"
+        alt="Two pilgrims walking the pilgrimage" />
+
+      <!--  <a> hyperlink to link one page to another / href: specifies URL      -->
+      <!--   target means where to open linked document / _blank opens it in a different window     -->
+      <a href="http://www.shikokuhenrotrail.com/" target="_blank" class="title">Shikoku Pilgrimage</a>
+      <p>The Shikoku pilgrimage route is a circular-shaped pilgrimage that includes 88 temples and numerous other sacred
+        sites where the Buddhist priest Kukai, is believed to have trained. If walked, the entire route is about 1,200
+        kilometers long which
+        allows one to experience the abundant natural surroundings of Shikoku and provides an opportunity to reflect on
+        one's life and to change for the better.</p>
+      
+
+
+      <div class="rate-container">
+        <h2 class="price">Price:</h2>
+        <!--   <strong> define text with strong importance        -->
+        <p> <strong>Walking:</strong> This will take about 6 weeks and cost about 400,000 JPY.</p><br>
+        <p><strong>Charted bus:</strong> This will take 9-12 days and cost about 250,000 JPY. </p><br>
+        <p><strong>Car:</strong> This will take about 10 days and cost about 140,000 JPY.</p>
+      </div>
+
+    </div>
+
+    <div class="activities">
+      <img src="https://www.my-kagawa.jp/en/images/seeing/se01/photo03.jpg" alt="Ritsurin Garden" />
+
+      <a href="https://www.my-kagawa.jp/en/ritsurin/" target="_blank" class="title">Ritsurin Garden</a>
+      <p>Ritsurin Garden is designated as a special place of scenic beauty, this spacious garden features 6 ponds and 13
+        landscaped hills. While strolling you can enjoy the changing landscape, therefore it is said that the variety of
+        scenery has the attraction
+        of a change in scenery with every step. You can also enjoy a ride on a Japanese boat, the “Senshu maru”.
+      </p><br>
+
+      <div class="rate-container">
+        <h2 class="price">Price:</h2>
+        <p><strong>Admission fee:</strong> Adults: 410 JPY / Children: 170 JPY</p><br>
+        <p><strong>For groups of 20 or more:</strong> Adults 330 JPY / Children 140 JPY</p><br>
+        <p>Admission is <b>free</b> on <b>January 1</b> and <b>March 16</b></p><br>
+        <p>Admission is <b>free</b> for preschool-aged children.</p>
+      </div>
+    </div>
+
+    <div class="activities">
+      <img src="https://www.teamlab.art/images/sp-l/20676" alt="Kochi Castle" />
+
+      <a href="https://kochipark.jp/kochijyo/" target="_blank" class="title">Kochi Castle</a>
+      <p>Kochi Castle is one of just twelve Japanese castles to have survived the fires, wars and other catastrophes of
+        the post feudal age. The castle used to be the seat of the Yamauchi lords, who ruled over the surrounding
+        region, then known as Tosa,
+        during the Edo Period. The castle buildings have since been designated "important cultural properties", and now
+        house local treasures and historical objects. Kochi Castle is located a short walk from Kochijo-mae tram stop.
+      </p><br>
+
+      <div class="rate-container">
+        <h2 class="price">Price:</h2>
+        <p><b>18 years and older:</b> 420 JPY</p>
+        <p><b>17 years and under:</b> Free</p>
+      </div>
+    </div>
+
+    <div class="activities">
+      <img
+        src="https://dsimg.wowjpn.goo.ne.jp/rs/?src=https://wow-j.com/images/ext/allguides/01902/01902_004.jpg&maxw=750&maxh=0&resize=1"
+        alt="Whitewater Rafting" />
+
+      <a href="http://www.yoshinogawa-nicerafting.com/index.html" target="_blank" class="title">Whitewater Rafting</a>
+      <p>Oboke and Koboke are valleys in the mountains of Tokushima, a prefecture in Shikoku. They have stunning vistas
+        with V-shaped valleys created over 200 million years and beautiful marble-like rock surfaces. Both of them are
+        designated as natural monuments
+        and places of outstanding beauty. There are thrilling whitewater rafting rides that you can experience there.
+        Battle the rapids and splashes of water in a rubber boat! Every ride is accompanied by an instructor, so no
+        experience is necessary.</p><br>
+
+      <div class="rate-container">
+        <h2 class="price">Price:</h2>
+        <p><strong>1-Day Tour (high school age and older):</strong> 8,500 JPY </p><br>
+        <p><b>Family Rafting Tour:</b><br> (high school age and older): 5,500 JPY<br> (ages 4 through junior high
+          school): 5,000 JPY</p>
+      </div>
+
+    </div>
+
+    <div class="activities">
+      <img src="https://pix10.agoda.net/hotelImages/271044/-1/9383ccc567e1542eab727c211f63326c.jpg?s=1200x800"
+        alt="Natural Hot Springs" />
+
+      <a href="https://www.oboke-iya.jp/en/#04" target="_blank" class="title">Natural Hot Springs</a>
+      <p>These hot springs are located in the Iya Valley, which is one of Japan's three top secluded regions. The hot
+        spring water here, which has a soft and slightly viscous texture, is said to be highly effective in easing
+        fatigue. Guests at Hotel Iya
+        Onsen can take a cable car down to the bottom of the valley to enjoy open-air baths along the stream, which have
+        fantastic views of the valley’s seasonal beauty. </p>
+    </div>
+
+    <div class="activities">
+      <img src="https://savorjapan.com/gg/content_image/t0221_003_20190315025916.jpg" alt="Zatorijiro Restaurant" />
+
+      <a href="https://toku-demae.com/index.html" target="_blank" class="title">Zatorijiro Restaurant</a>
+      <p>This is a restaurant specializing in Awaodori chicken that was raised in a nature-rich environment. The
+        signature menu item is the Awaodori Barayaki, where the chicken breast meat with the rib meat still attached is
+        cooked over charcoal, trapping
+        its savory taste. They make sure the whole chicken can be savored, such as by taking dashi (broth) from the
+        chicken bones and searing or cooking parts like the liver.</p><br>
+
+      <div class="rate-container">
+        <h2 class="price">Price:</h2>
+        <p><b>Average price:</b> 3,500 JPY</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="validator">
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+  </div>
+
+  <!-- tag defines my footer for my document      -->
+  <!--  div used as a container for my HTML elements, which I then styled with CSS / any sort of content   -->
+  <footer>
+
+    <!-- div is more for sectioning off content     -->
+    <div class="footer-container">
+      <p><i class="fas fa-yin-yang yin-style"></i></p>
+    </div>
+
+    <!-- <ul> : unordered list comes with bullets    -->
+    <!--  <li> : list that comes with numbers    -->
+    <ul class="link-container">
+      <li><a aria-label="Instagram" target="_blank" href="https://www.instagram.com/?hl=en"><i
+            class="fab fa-instagram icon"></i></a></li>
+      <li><a aria-label="Twitter" target="_blank" href="https://twitter.com/?lang=en"><i
+            class="fab fa-twitter icon"></i></a></li>
+      <li><a aria-label="Snapchat" target="_blank" href="https://www.snapchat.com/"><i
+            class="fab fa-snapchat-ghost icon"></i></a></li>
+    </ul>
+
+    <!--  my copyright in a p tag    -->
+    <p class="copy-right">&copy; Rudy Rodriguez 2020</p>
+
+  </footer>
+
+  <!--  Font awesome kit  -->
+  <script src="https://kit.fontawesome.com/177dc0274e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

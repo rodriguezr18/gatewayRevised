@@ -1,0 +1,108 @@
+<!-- instruction to the web browser about what version of HTML the page is written in -->
+<!DOCTYPE html>
+
+<!-- Root of an html document/container for HTML elements except <!DOCTYPE> tag -->
+<html lang="en">
+
+<!-- Container for metadata (data about data) between <html> tag and <body> tag   -->
+
+<head>
+
+  <!-- Defines the title of the document/Shown in browsers title bar or page's tab     -->
+  <!--  Important for Search Engine Optimization/Make it meaningful    -->
+  <title>Home</title>
+
+  <!-- <link> defines relationship between current document and external resource     -->
+  <!-- <link rel= specifies the relationship between current DOC and linked DOC     -->
+  <!--  href= specifies the location of the linked document   -->
+  <!--  type= lets the browser know what type of file it is    -->
+
+  <link rel="stylesheet" href="./css/index.css" type="text/css">
+
+</head>
+
+<!-- defines documents body/contains headings,paragraphs,images,hyperlinks,tables,list   -->
+
+<body>
+
+  <!-- nav defines a set of navigation links/ intended only for major block of nav links  -->
+  <!-- class specifies one or more class names for an element/ can be used more than once -->
+  <!-- class is pointing to my css style sheet     -->
+  <nav class="nav-container">
+
+    <!-- <ul> defines unordered (bulleted) list      -->
+    <!--  used list-style: none; to take bullets away      -->
+    <!--  class="link container" pointing to my style sheet     -->
+
+    <ul class="link-container">
+
+      <!--  class="active-hover" pointing to my style sheet to directly hit each line      -->
+      <!--  <a> defines hyperlink used to link from one page to another        -->
+      <!--  href is the path to my file      -->
+      <li class="active-hover current"><a href="./index.html">Home</a></li>
+      <li class="active-hover"><a href="./todo.html">To Do</a></li>
+      <li class="active-hover"><a href="./cuisine.html">Cuisine</a></li>
+      <li class="active-hover"><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- header defines the header of a page or a section   -->
+  <!-- h1 defines the most important heading -->
+  <header class="main-logo-container">
+    <h1 class="main-logo">SHIKOKU</h1>
+  </header>
+
+  <!-- defines the section in my document   -->
+  <!--   <p> tag defines my paragraph -->
+  <!-- section give more symantics   -->
+  <main class="content-container">
+    <h2>
+      Information about Shikoku:
+    </h2>
+
+    <p>Shikoku, which literally means "four provinces" is the second smallest main island of Japan after Okinawa.
+      Shikoku is encircled by a 1,200km, 88-temple Buddhist pilgrimage route (henro). This route honors the 9th-century
+      monk Kukai. This island is
+      known for its pleasant climate and slow paced way of life. The coast of Shikoku is surrounded by small ports,
+      fishing villages, and salt collecting areas, whilenland, you can find farms situated on the islands gentle-sloping
+      hills and steep mountains.
+      The rivers have incredibly clear water.</p>
+  </main>
+
+  <div class="validator">
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+  </div>
+
+  <!-- tag defines my footer for my document      -->
+  <!--  div used as a container for my HTML elements, which I then styled with CSS / any sort of content   -->
+  <footer>
+
+    <!-- div is more for sectioning off content     -->
+    <div class="footer-container">
+      <p><i class="fas fa-yin-yang yin-style"></i></p>
+    </div>
+
+    <!-- <ul> : unordered list comes with bullets    -->
+    <!--  <li> : list that comes with numbers    -->
+    <ul class="link-container">
+      <li><a aria-label="Instagram" target="_blank" href="https://www.instagram.com/?hl=en"><i
+            class="fab fa-instagram icon"></i></a></li>
+      <li><a aria-label="Twitter" target="_blank" href="https://twitter.com/?lang=en"><i
+            class="fab fa-twitter icon"></i></a></li>
+      <li><a aria-label="Snapchat" target="_blank" href="https://www.snapchat.com/"><i
+            class="fab fa-snapchat-ghost icon"></i></a></li>
+    </ul>
+
+    <!--  my copyright in a p tag    -->
+    <p class="copy-right">&copy; Rudy Rodriguez 2020</p>
+
+  </footer>
+
+  <!--  Font awesome kit  -->
+  <script src="https://kit.fontawesome.com/177dc0274e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

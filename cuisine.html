@@ -1,0 +1,145 @@
+<!-- instruction to the web browser about what version of HTML the page is written in -->
+<!DOCTYPE html>
+
+<!-- Root of an html document/container for HTML elements except <!DOCTYPE> tag -->
+<html lang="en">
+
+<!-- Container for metadata (data about data) between <html> tag and <body> tag   -->
+
+<head>
+
+  <!-- Defines the title of the document/Shown in browsers title bar or page's tab     -->
+  <!--  Important for Search Engine Optimization/Make it meaningful    -->
+  <title>Home</title>
+
+  <!-- <link> defines relationship between current document and external resource     -->
+  <!-- <link rel= specifies the relationship between current DOC and linked DOC     -->
+  <!--  href= specifies the location of the linked document   -->
+  <!--  type= lets the browser know what type of file it is    -->
+
+  <link rel="stylesheet" href="./css/cuisine.css" type="text/css">
+
+</head>
+
+<!-- defines documents body/contains headings,paragraphs,images,hyperlinks,tables,list   -->
+
+<body>
+
+  <!-- nav defines a set of navigation links/ intended only for major block of nav links  -->
+  <!-- class specifies one or more class names for an element/ can be used more than once -->
+  <!-- class is pointing to my css style sheet     -->
+  <nav class="nav-container">
+
+    <!-- <ul> defines unordered (bulleted) list      -->
+    <!--  used list-style: none; to take bullets away      -->
+    <!--  class="link container" pointing to my style sheet     -->
+
+    <ul class="link-container">
+
+      <!--  class="active-hover" pointing to my style sheet to directly hit each line      -->
+      <!--  <a> defines hyperlink used to link from one page to another        -->
+      <!--  href is the path to my file      -->
+      <li class="active-hover"><a href="./index.html">Home</a></li>
+      <li class="active-hover"><a href="./todo.html">To Do</a></li>
+      <li class="active-hover current"><a href="./cuisine.html">Cuisine</a></li>
+      <li class="active-hover"><a href="./contact.html">Contact</a></li>
+      
+    </ul>
+  </nav>
+
+  <!-- header defines the header of a page or a section   -->
+  <!--   h1 defines the most important heading -->
+  <header class="main-logo-container">
+    <h1 class="main-logo">Cuisine</h1>
+  </header>
+
+  <!-- defines the section in my document   -->
+  <!--  div used as a container for my HTML elements, which I then styled with CSS / any sort of content   -->
+  <!--  <img> is used to embed an image / src= specifies the path to the image / alt= specifies alternate text -->
+  <section class="todo">
+
+    <div class="foods">
+      <img
+        src="https://omnivorescookbook.com/wp-content/uploads/2019/08/1405_Easy-Chicken-Udon-Soup_550.jpg"
+        alt="Chicken Udon Soup" />
+
+      <!--  <a> hyperlink to link one page to another / href: specifies URL      -->
+      <!--   target means where to open linked document / _blank opens it in a different window     -->
+      <h2>Chicken Udon Soup</h2>
+      <p>A super simple one-pot chicken udon soup that guarantees maximum satisfaction with beautifully seared chicken, rich soup, thick noodles, and tender veggies.</p>
+      </div>
+
+
+    <div class="foods">
+      <img
+        src="https://resources.matcha-jp.com/archive_files/en/2016/09/28200520/hanamidango-20160926_3.jpg"
+        alt="Botchan Dango" />
+
+      <h2>Botchan Dango</h2>
+      <p>Botchan Dango is a traditional Japanese sweet that consists of three mochi (rice flour 
+            dumplings) on a bamboo skewer. The dumplings are wrapped in bean paste 
+            flavored with red adzuki beans, eggs, and green tea, that give them their three distinctive 
+            colors. 
+            </p>
+        </div>
+
+    <div class="foods">
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=946x10000:format=jpg/path/s5b23d8c8b4b32e08/image/i551ec9e5a25cfdb8/version/1493607458/image.jpg"
+        alt="Tai Meshi" />
+
+        <h2>Tai Meshi</h2>
+      <p>In the Uwajima region of Ehime, locals enjoy a dish called Tai Meshi 
+          (red snapper and rice), which is regarded as the “soul food” of Ehime. 
+          Tai Meshi consists of a bowl of cooked rice topped with red snapper sashimi 
+          that has been dipped in raw egg yolk mixed with a sweet sauce. </p>
+    </div>
+
+    <div class="foods">
+      <img src="https://japan-brand.jnto.go.jp/wp-content/uploads/2014/03/78-b.jpg" alt="Tokushima Ramen" />
+
+      <h2>Tokushima Ramen</h2>
+      <p>Tokushima Ramen comes in shades of dark brown, yellow and white, 
+          depending on whether pork, chicken or vegetable broth is used, and whether 
+          the soy sauce added is dark or light. Bowls of the broth and soft, 
+          thin noodles are served topped with slices of seasoned pork ribs, 
+          green onions, and a raw egg that cooks in the hot soup. </p>
+          </div>
+
+  </section>
+
+  <div class="validator">
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+  </div>
+
+  <!-- tag defines my footer for my document      -->
+  <!--  div used as a container for my HTML elements, which I then styled with CSS / any sort of content   -->
+  <footer>
+
+    <div class="footer-container">
+      <p><i class="fas fa-yin-yang yin-style"></i></p>
+    </div>
+
+    <!-- <ul> : unordered list comes with bullets    -->
+    <!--  <li> : list that comes with numbers    -->
+      <ul class="link-container">
+        <li><a aria-label="Instagram" target="_blank" href="https://www.instagram.com/?hl=en"><i
+              class="fab fa-instagram icon"></i></a></li>
+        <li><a aria-label="Twitter" target="_blank" href="https://twitter.com/?lang=en"><i
+              class="fab fa-twitter icon"></i></a></li>
+        <li><a aria-label="Snapchat" target="_blank" href="https://www.snapchat.com/"><i
+              class="fab fa-snapchat-ghost icon"></i></a></li>
+      </ul>
+
+    <!--  my copyright in a p tag    -->
+    <p class="copy-right">&copy; Rudy Rodriguez 2020</p>
+
+  </footer>
+
+  <!--  Font awesome kit  -->
+  <script src="https://kit.fontawesome.com/177dc0274e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
